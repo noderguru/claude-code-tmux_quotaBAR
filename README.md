@@ -11,6 +11,9 @@ Claude Code quotas  5h 42% ▰▰▱▱▱ ⟳ 14:35 │ 7d 18% ▰▱▱▱▱ 
 - **▰▱ blocks** — battery-style visual gauge (5 blocks, each = 20%)
 - **Colors** — green (<50%), dark blue (50–74%), red (75–89%), red bg (≥90%)
 
+<img width="1886" height="256" alt="image" src="https://github.com/user-attachments/assets/ba8d823e-deac-46aa-8a5e-e5f75f034d2e" />
+
+
 ## How it works
 
 The script calls the same API that Claude Code itself uses — `GET https://api.anthropic.com/api/oauth/usage` (read‑only, **does NOT consume quota**). It uses your OAuth token from `~/.claude/.credentials.json` — the exact same token that powers `/usage` inside the CLI.
